@@ -19,10 +19,11 @@ class Timer extends Component {
 		this.ticker = this.ticker.bind(this);
 	}
 	render(){
+		var clock = Math.round(this.state.clock / 1000)
 		return(
 			<div>
 				<p>You have been on this site since: </p> <br />
-				<span> {this.state.clock} </span>
+				<span> {clock} </span>
 				<p> Seconds.</p>
 			</div>
 		);
